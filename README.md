@@ -27,14 +27,13 @@ Allows to use the symfony [env parameter syntax][env-docu-url] in the behat conf
 
  - `env_file` - a dot env file, contains environment variables which should be also used, the file is not required
 
-
 [env-docu-url]: https://symfony.com/doc/current/configuration.html
 
-[packagist-image]: https://img.shields.io/packagist/v/tourstream/environment-extension.svg
+[packagist-image]: https://poser.pugx.org/tourstream/environment-extension/v/stable
 [packagist-url]: https://packagist.org/packages/tourstream/environment-extension
 
 [travis-image]: https://travis-ci.org/tourstream/EnvironmentExtension.svg?branch=master
 [travis-url]: https://travis-ci.org/tourstream/EnvironmentExtension
 
-[license-image]: https://img.shields.io/github/license/tourstream/EnvironmentExtension.svg?style=flat-square
+[license-image]: https://poser.pugx.org/tourstream/environment-extension/license
 [license-url]: https://github.com/tourstream/EnvironmentExtension/blob/master/LICENSE
