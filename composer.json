@@ -1,0 +1,33 @@
+{
+    "name": "tourstream/environment-extension",
+    "description": "Extension for behat, which allows to use env() as parameter",
+    "type": "behat-extension",
+    "keywords": ["behat","bdd","environment"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander Miehe",
+            "email": "alexander.miehe@tourstream.eu"
+        }
+    ],
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Tourstream\\Behat\\EnvironmentExtension\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.1",
+        "behat/behat": "^3.4",
+        "symfony/dotenv": "^3.4|^4.0"
+    },
+    "require-dev": {
+        "friends-of-behat/test-context": "^1.1",
+        "symfony/dependency-injection": "^3.4"
+    }
+}

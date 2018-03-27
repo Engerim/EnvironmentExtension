@@ -1,0 +1,24 @@
+language: php
+
+php:
+    - 7.2
+
+env:
+    - SYMFONY_VERSION=3.4.*
+    - SYMFONY_VERSION=4.0.*
+
+cache:
+    directories:
+        - ~/.composer/cache/files
+
+before_install:
+    - phpenv config-rm xdebug.ini || true
+
+install:
+    - composer require symfony/dotenv:${SYMFONY_VERSION} --no-update --no-scripts --prefer-dist
+    - composer update --prefer-dist
+
+script:
+    - composer validate --strict
+
+    - vendor/bin/behat --strict
